@@ -4,11 +4,7 @@ import math
 import spotipy
 import spotipy.util as util
 from collections import OrderedDict
-scope = 'user-library-modify playlist-modify-public'
-username = 'grammnixon1'
-redirectUri = 'http://localhost:8888/callback'
-clientId = 'cd6af65dd90340288b2bd6b33dc33771'
-clientSecret = '0ccc719218a3496e842c557700f5507c'
+#Client URI and Client Secret are hidden for public reasons
 token = util.prompt_for_user_token(username, scope, client_id=clientId,client_secret = clientSecret, redirect_uri=redirectUri)
 spotify = spotipy.Spotify(auth=token)
 
